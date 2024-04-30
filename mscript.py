@@ -1,6 +1,11 @@
 import numpy as np
 
 def read(file: str):
+    if file.endswith(".mscript"):
+        pass
+    else:
+        raise "INCORRECT FILE TYPE ERROR :: Should be *.mscript"
+        
     with open(file, "r") as f:
         data = f.read()
 
