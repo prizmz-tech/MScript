@@ -12,7 +12,7 @@ def mscrToPy(fileName: str):
     mprint = file.replace("println(", "print(")
     mprint2 = mprint.replace('")', '\\n")')
 
-    python = mprint2.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match")
+    python = mprint2.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match").replace("enum", "enumerate")
 
     with open(f"{file}.py", "w") as i:
         i.write(str(python))
