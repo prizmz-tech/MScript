@@ -14,7 +14,5 @@ def mscrToPy(fileName: str):
 
     python = mprint2.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match").replace("enum", "enumerate")
 
-    with open(f"{file}.py", "w") as i:
+    with open("exe.py", "w") as i:
         i.write(str(python))
-
-    return file
