@@ -1,4 +1,5 @@
 # MScript
+Simpler syntax-based scripting language. <br />
 v1.5BETA 
 ## Documentation
 There is two versions of print: `println` and `print`. <br />
