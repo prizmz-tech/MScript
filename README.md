@@ -1,5 +1,5 @@
 # MScript
-v1.0BETA 
+v1.2BETA 
 ## Documentation
 MScript is extremely similiar to Python in syntax and features; however, there are some differences:
 - `def` -> `func`
