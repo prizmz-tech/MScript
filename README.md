@@ -1,5 +1,5 @@
 # MScript
-v1.4BETA 
+v1.5BETA 
 ## Documentation
 There is two versions of print: `println` and `print`. <br />
 `println` Automatically prints a value on a newline <br />
@@ -14,3 +14,6 @@ MScript is extremely similiar to Python in syntax and features; however, there a
 - `True` -> `true`
 - `False` -> `false`
 - `**` -> `^`
+- `None` -> `none`
+- `raise` -> `r+`
+- `->` -> `>>`
