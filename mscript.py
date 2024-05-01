@@ -17,7 +17,9 @@ def mscrToPy(fileName: str):
     mprint = file.replace("println(", "print(")
     mprint2 = mprint.replace('")', '\\n")')
 
-    python = mprint2.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match").replace("enum", "enumerate").replace("true", "True").replace("false", "False").replace("^", "**").replace("r+", "raise").replace(">>", "->").replace("none", "None")
+    expections = mprint2.replace("except", "except Exception")
+
+    python = expections.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match").replace("enum", "enumerate").replace("true", "True").replace("false", "False").replace("^", "**").replace("r+", "raise").replace(">>", "->").replace("none", "None")
 
     with open("exe.py", "w") as i:
         i.write(str(python))
