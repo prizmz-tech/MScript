@@ -1,6 +1,6 @@
 # MScript
 Simpler syntax-based scripting language. <br />
-**v1.0**
+**v1.1**
 ## Documentation
 ### Printing
 There are two versions of print: `println` and `print`. <br />
@@ -23,3 +23,7 @@ MScript is extremely similar to Python in syntax and features; however, there ar
 - `None` -> `none` <br />
 - `raise` -> `r+` <br />
 - `->` -> `>>` <br />
+- `+=` -> `++` <br />
+- `-=` -> `--` <br />
+- `*=` -> `**` <br />
+- `/=` -> `//` <br />
