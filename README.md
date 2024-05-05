@@ -1,5 +1,5 @@
 # MScript
-Simpler syntax-based scripting language. <br />
+Simple syntax-based scripting language. <br />
 **v1.1**
 ## Documentation
 ### Printing
