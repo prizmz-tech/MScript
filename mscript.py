@@ -21,7 +21,11 @@ def mscrToPy(fileName: str):
 
     equalTo = expections.replace("++", "+=").replace("--", "-=").replace("**", "*=").replace("//", "/=") 
 
-    python = equalTo.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match").replace("enum", "enumerate").replace("true", "True").replace("false", "False").replace("^", "**").replace("r+", "raise").replace(">>", "->").replace("none", "None")
+    threads = equalTo.replace("parallel", "threading.Thread")
 
+    python = threads.replace("func", "def").replace("&", "and").replace("|", "or").replace("switch", "match").replace("enum", "enumerate").replace("true", "True").replace("false", "False").replace("^", "**").replace("r+", "raise").replace(">>", "->").replace("none", "None")
+
+    impPython: str = "import threading\n" + python 
+    
     with open("exe.py", "w") as i:
-        i.write(str(python))
+        i.write(str(impPython))
