@@ -1,6 +1,6 @@
 # MScript
 Simple syntax-based scripting language. <br />
-**v1.1**
+**v2.0**
 ## Documentation
 ### Printing
 There are two versions of print: `println` and `print`. <br />
@@ -9,6 +9,9 @@ There are two versions of print: `println` and `print`. <br />
 
 ### Try-Exceptions
 - You do not need to add a specific exception type in a try-except statement. You just have to write `except:`
+
+### Multiprocessing
+MScript offers a way to do simple threading natively; use `parallel(func, args)`
 
 ### Other
 MScript is extremely similar to Python in syntax and features; however, there are some differences: <br/>
